@@ -1,0 +1,60 @@
+Average Units Shipped - Lab 1 - Pseudo Code
+Benjamin Priebe - 100437762
+
+''' <summary>
+''' Program: Average Units Shipped
+''' Author: Benjamin Priebe - 100437762
+''' Description: This program takes an input of one week 
+''' of units shipped out, per day, stores them in an array,
+''' and then once we entered the seventh day's information,
+''' to program will calculate the average units shipped for
+''' the week and display it rounded to two decimals.
+'''
+''' </summary>
+
+Activate Strict with 'option strict on'
+
+CONSTANTS
+lower limit for input as 0
+upper limit for input as 1001
+
+VARIABLES
+Empty string for user input
+variable for the integer output of tryparse on user input
+create an array with 7 spaces
+create an integer called index to use as counter and index
+create integer known as sum to hold totals for processing
+create double known as result of average to hold resulting average, with decimals
+
+WHEN FORM LOADS
+Make lblDayNumber print 'Day 1' or 'Day ' & index+1
+
+WHEN ENTER IS CLICKED
+Save whatever is in input textbox to userInput string
+
+Test if it is an integer (TryParse)
+	If not, Throw error, decrement index, refocus on input textbox
+	
+If it is an integer, Test if it is between 0 and 1000 range
+	If not, Throw error, decrement index, refocus on input textbox
+
+If it is between range - HOORAY! - proceed with processing
+	Set day label to 'Day ' & index + 1, updating day counter
+	Save integer from the TryParse as the userInput string
+	Save userInput into the multi-line textbox, and carriage return
+	Make input textbox blank and refocus, for next input
+	
+	IF AT ANY POINT index hits the end (length of array minus 1)
+		Save textbox value to userInput string
+		Disable input textbox
+		Disable enter button
+		Empty input textbox
+		
+		For every element in the array, from 0 to the end (array length minus 1)
+			Add them up to the sum variable
+		
+		Average result is the sum / length of array
+		Round Average Result
+		Print Average Result 
+	
+You are Done!

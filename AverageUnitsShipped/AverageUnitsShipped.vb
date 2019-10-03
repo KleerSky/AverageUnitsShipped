@@ -2,10 +2,7 @@
 ''' Program: Average Units Shipped
 ''' Author: Benjamin Priebe - 100437762
 ''' Description: This program takes an input of one week 
-''' of units shipped out, per day, stores them in an array,
-''' and then once we entered the seventh day's information,
-''' to program will calculate the average units shipped for
-''' the week and display it rounded to two decimals.
+''' of units skjhkjhkjhkhjkhjkjh jgjhghg jmh. lkj. ()
 '''
 ''' </summary>
 
